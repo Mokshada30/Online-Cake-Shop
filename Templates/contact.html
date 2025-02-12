@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if message %}
+<script>
+    alert('{{message}}');
+</script>
+{% endif %}
+
+
+<div class="heading">
+    <h1>Contact us</h1>
+</div>
+
+<section class="contact">
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>our number</h3>
+            <p>+91-9518799233</p>
+            <p>+456-786-7890</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>our email</h3>
+            <p>mayureshchimankar2@gmail.com</p>
+            <p>aditya@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>our address</h3>
+            <p>IIT BHU , Varansi - 221005</p>
+        </div>
+
+    </div>
+
+     <div class="row">
+         <form action="" method="post">
+            {% csrf_token %}
+             <h3>get in touch</h3>
+             <div class="inputBox">
+             <input type="text" name="name" placeholder="Enter your name" class="box">
+             <input type="text" name="email" placeholder="Enter your email" class="box">
+            </div>
+            <div class="inputBox">
+                <input type="number" name="contactno" placeholder="Enter your contact number" class="box">
+                <input type="text" name="query" placeholder="Enter your Query" class="box">
+               </div>
+               <textarea name="message" placeholder=" your message" cols="30" rows="10"></textarea>
+               <input type="submit" value="send message" class="btn">
+         </form>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2414389795736!2d82.99084537511669!3d25.26246232905461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e3152738d05dd%3A0x3c68a89c5a4199c6!2sCSE%20Department%2C%20IIT%20BHU!5e0!3m2!1sen!2sin!4v1697612229269!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+
+</section>
+
+<div class="space"></div>
+
+{% endblock  %}
+

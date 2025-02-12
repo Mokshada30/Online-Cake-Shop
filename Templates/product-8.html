@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .product {
+            display: flex;
+            align-items: center;
+            border: 1px solid #833517;
+            padding: 100px;
+            margin: 100px;
+            
+
+        }
+
+        .product-image {
+            flex: 1; /* Adjust the flex value as needed to control image size */
+            margin-right: 20px; /* Add spacing between image and content */
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            flex: 2; /* Adjust the flex value as needed to control content size */
+        }
+
+        .product-title {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #f1e7e7; /* Adjust the color as needed */
+        }
+
+        .product-description {
+            font-size: 14px;
+        }
+
+        .product-rating {
+            color: #FFD700; /* Adjust the color as needed for stars */
+        }
+
+        .btn-primary {
+            background-color: #00ff0d; /* Adjust the button styling as needed */
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            margin: 20px;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <center><div class="product">
+        <div class="product-image">
+            <img src="/Static/img/product-8.jpg" alt="dark chocolate nutella cake">
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">dark chocolate nutella cake</h1>
+            <div class="product-price">₹ 489</div>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="product-description">
+                A chocolate cake is a popular dessert made with chocolate as a primary ingredient. It typically consists of layers of moist and rich chocolate-flavored cake, often sandwiched with chocolate icing or frosting. Chocolate cakes come in various forms, such as classic layer cakes, decadent fudge cakes, or even molten lava cakes. They are beloved for their indulgent, sweet, and cocoa-rich flavor, making them a favorite treat for chocolate lovers and special occasions.
+            </p><br>
+            <br>
+            <div>
+            <form action="#" method="post">
+                {% csrf_token %}
+                <a href="/payment" class="btn-primary">BUY NOW</a>
+                <!-- <button type="submit" class="btn btn-primary">BUY NOW</button> -->
+                
+            </form></div>
+        </div>
+    </div></center>
+</body>
+</html>
+
+
+
+{% endblock %}

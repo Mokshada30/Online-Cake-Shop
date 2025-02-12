@@ -1,0 +1,666 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if message %}
+<script>
+    alert('{{message}}');
+</script>
+{% endif %}
+
+<section class="home" id="home">
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <span>A Cake for you and your loved ones</span>
+                <h3>upto 50% off</h3>
+                <a href="/shop" class="btn">Shop Now</a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/home-img-1.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>A Cake for you and your loved ones</span>
+                <h3>upto 50% off</h3>
+                <a href="/shop" class="btn">Shop Now</a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/home-img-2.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>A Cake for you and your loved ones</span>
+                <h3>upto 50% off</h3>
+                <a href="/shop" class="btn">Shop Now</a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/home-img-3.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+</section>
+
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img decoding="async" src="/Static/img/banner-1.jpg" alt="">
+        <div class="content">
+        <span>limited sales</span>
+        <h3>upto 50% off</h3>
+        <a href="/shop" class="btn">shop now</a>
+    </div>
+    </div>
+
+    <div class="banner">
+        <img decoding="async" src="/Static/img/banner-2.jpg" alt="">
+        <div class="content">
+        <span>limited sales</span>
+        <h3>upto 50% off</h3>
+        <a href="/shop" class="btn">shop now</a>
+    </div>
+    </div>
+
+    <div class="banner">
+        <img decoding="async" src="/Static/img/banner-3.jpg" alt="">
+        <div class="content">
+        <span>limited sales</span>
+        <h3>upto 50% off</h3>
+        <a href="/shop" class="btn">shop now</a>
+    </div>
+    </div>
+
+</section>
+
+
+
+
+<div class="heading">
+    <h1>our shop</h1>
+    </div>
+
+<section class="category">
+
+<h1 class="title"> our <span>category</span> <a href="/product">view all >></a> </h1>
+
+<div class="box-container">
+
+    <a href="#" class="box">
+        <img decoding="async" src="/Static/img/cat-1.jpg" alt="">
+        <h3>fresh cupcake</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img decoding="async" src="/Static/img/cat-2.jpg" alt="">
+        <h3>cookies</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img decoding="async" src="/Static/img/cat-3.jpg" alt="">
+        <h3>brown bread</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img decoding="async" src="/Static/img/cat-4.jpg" alt="">
+        <h3>Dark chocolate</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img decoding="async" src="/Static/img/cat-5.jpg" alt="">
+        <h3>Wheat</h3>
+    </a>
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="products">
+
+    <h1 class="title"> our <span>products</span> <a href="/product">view all >></a> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="/product1" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/product-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>berries citrus fruits cake</h3>
+                <div class="price">₹ 349</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="/product2" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/product-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>resh mellow sp color cake</h3>
+                <div class="price">₹ 429</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="/product3" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/product-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Rose color sparkel cake</h3>
+                <div class="price">₹ 389</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="/product4" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/product-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>strawberry nutella cake</h3>
+                <div class="price">₹ 479</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="/product5" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/product-5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>green bread spar cake</h3>
+                <div class="price">₹ 589</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="/product6" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/product-6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>red berries chocolate cake</h3>
+                <div class="price">₹ 349</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="/product7" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/product-7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>strawberry red spar cake</h3>
+                <div class="price">₹ 349</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="/product8" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img decoding="async" src="/Static/img/product-8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>dark chocolate nutella cake</h3>
+                <div class="price">₹ 349</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+
+
+
+<div class="heading">
+    <h1>About us</h1>
+    </div>
+
+<section class="about">
+    <div class="img">
+         <img decoding="async" src="/Static/img/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <span>welcome to our products</span>
+        <h3>A Cake for you and your loved ones</h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore farhan aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+         farhan aliqua. Ut enim ad minim veniam, quis</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+</section>
+
+
+
+<section class="gallery">
+    <h1 class="title"> our <span>gallery</span> <a href="#">view all >></a> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-1.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-2.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-3.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-4.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-5.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-6.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="heading">
+    <h1>client's review</h1>
+</div>
+
+<section class="info-container">
+
+    <div class="info">
+        <img decoding="async" src="/Static/img/icons-1.png" alt="">
+        <div class="content">
+            <h3>fast delivery</h3>
+            <span>within 30 minutes</span>
+        </div>
+    </div>
+
+    <div class="info">
+        <img decoding="async" src="/Static/img/icons-2.png" alt="">
+        <div class="content">
+            <h3>24 / 7 available</h3>
+            <span>call us anytime</span>
+        </div>
+    </div>
+
+    <div class="info">
+        <img decoding="async" src="/Static/img/icons-3.png" alt="">
+        <div class="content">
+            <h3>easy payments</h3>
+            <span>cash or credit or online</span>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="review">
+
+    <div class="box">
+        <div class="user">
+            <img decoding="async" src="/Static/img/pic-1.png" alt="">
+            <div class="info">
+                <h3>Mayuresh Chimankar</h3>
+                <span>Happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img decoding="async" src="/Static/img/pic-2.png" alt="">
+            <div class="info">
+                <h3>Aditya</h3>
+                <span>Happ client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img decoding="async" src="/Static/img/pic-3.png" alt="">
+            <div class="info">
+                <h3>Rahul</h3>
+                <span>Happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img decoding="async" src="/Static/img/pic-4.png" alt="">
+            <div class="info">
+                <h3>lisa bey</h3>
+                <span>Happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img decoding="async" src="/Static/img/pic-5.png" alt="">
+            <div class="info">
+                <h3>Sandeep Boka</h3>
+                <span>Happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img decoding="async" src="/Static/img/pic-6.png" alt="">
+            <div class="info">
+                <h3>lalisa bey</h3>
+                <span>happ client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+</section>
+
+
+
+<div class="heading">
+    <h1>our blogs</h1>
+</div>
+
+<section class="blogs">
+    <h1 class="title"> our <span>blogs</span> <a href="#">view all >></a> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="/Static/img/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+            <div class="icons">
+                <a href="#"> <i class="fsa fa-calendar"></i> 31 Oct, 2023 </a>
+                <a href="#"> <i class="fsa fa-user"></i> By administrator </a>
+            </div>
+             <h3>blogs title page</h3>
+             <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+             <a href="#" class="btn">read more...</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+            <img decoding="async" src="/Static/img/blog-2.jpg" alt="">
+        </div>
+        <div class="content">
+        <div class="icons">
+            <a href="#"> <i class="fsa fa-calendar"></i>31 Oct, 2023</a>
+            <a href="#"> <i class="fsa fa-user"></i> By administrator </a>
+        </div>
+         <h3>blogs title page</h3>
+         <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+         <a href="#" class="btn">read more...</a>
+    </div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img decoding="async" src="/Static/img/blog-3.jpg" alt="">
+    </div>
+    <div class="content">
+    <div class="icons">
+        <a href="#"> <i class="fsa fa-calendar"></i> 31 Oct, 2023 </a>
+        <a href="#"> <i class="fsa fa-user"></i> By administrator </a>
+    </div>
+     <h3>blogs title page</h3>
+     <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+     <a href="#" class="btn">read more...</a>
+</div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img decoding="async" src="/Static/img/blog-4.jpg" alt="">
+    </div>
+    <div class="content">
+    <div class="icons">
+        <a href="#"> <i class="fsa fa-calendar"></i> 31 Oct, 2023 </a>
+        <a href="#"> <i class="fsa fa-user"></i> By administrator </a>
+    </div>
+     <h3>blogs title page</h3>
+     <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+     <a href="#" class="btn">read more...</a>
+</div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img decoding="async" src="/Static/img/blog-5.jpg" alt="">
+    </div>
+    <div class="content">
+    <div class="icons">
+        <a href="#"> <i class="fsa fa-calendar"></i> 31 Oct, 2023 </a>
+        <a href="#"> <i class="fsa fa-user"></i> By administrator </a>
+    </div>
+     <h3>blogs title page</h3>
+     <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+     <a href="#" class="btn">read more...</a>
+</div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img decoding="async" src="/Static/img/blog-6.jpg" alt="">
+    </div>
+    <div class="content">
+    <div class="icons">
+        <a href="#"> <i class="fsa fa-calendar"></i> 31 Oct, 2023 </a>
+        <a href="#"> <i class="fsa fa-user"></i> By administrator </a>
+    </div>
+     <h3>blogs title page</h3>
+     <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+     <a href="#" class="btn">read more...</a>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+<div class="heading">
+    <h1>Contact us</h1>
+</div>
+
+<section class="contact">
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>our number</h3>
+            <p>+91-9518799233</p>
+            <p>+91-9368329386</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>our email</h3>
+            <p>mayureshchimankar2@gmail.com</p>
+            <p>aditya@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>our address</h3>
+            <p>IIT BHU , Varansi - 221005</p>
+        </div>
+
+    </div>
+
+     <div class="row">
+         <form action="" method="post">
+            {% csrf_token %}
+             <h3>get in touch</h3>
+             <div class="inputBox">
+             <input type="text" name="name" placeholder="enter your name" class="box">
+             <input type="text" name="email" placeholder="enter your email" class="box">
+            </div>
+            <div class="inputBox">
+                <input type="number" name="contactno" placeholder="enter your number" class="box">
+                <input type="text" name="query" placeholder="enter your subject" class="box">
+               </div>
+               <textarea name="message" placeholder=" your message" cols="30" rows="10"></textarea>
+               <input type="submit" value="send message" class="btn">
+         </form>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2414389795736!2d82.99084537511669!3d25.26246232905461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e3152738d05dd%3A0x3c68a89c5a4199c6!2sCSE%20Department%2C%20IIT%20BHU!5e0!3m2!1sen!2sin!4v1697612229269!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+
+</section>
+
+<div class="space"></div>
+
+{% endblock  %}
+
+
+

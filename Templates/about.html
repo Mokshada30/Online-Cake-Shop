@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+<div class="heading">
+    <h1>About us</h1>
+    </div>
+
+<section class="about">
+    <div class="img">
+         <img decoding="async" src="/Static/img/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <span>welcome to our products</span>
+        <h3>A Cake for you and your loved ones</h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore farhan aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+         farhan aliqua. Ut enim ad minim veniam, quis</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+</section>
+
+<section class="gallery">
+    <h1 class="title"> our <span>gallery</span> <a href="#">view all >></a> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-1.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-2.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-3.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-4.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-5.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="/Static/img/gallery-img-6.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye" onclick="redirectToImageGallery()" ></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function redirectToImageGallery() {
+        // Replace the URL with the desired gallery URL
+        var galleryUrl = "/Static/img/gallery-img-6.jpg";
+        window.location.href = galleryUrl;
+    }
+</script>
+
+{% endblock  %}

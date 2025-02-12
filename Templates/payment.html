@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if message %}
+<script>
+    alert('{{message}}');
+</script>
+{% endif %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Product Payment</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.payment-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%;
+}
+
+.pay-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.pay-button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Product Payment</h1>
+        <p>You are purchasing the following product:</p>
+        <div class="product-details">
+            <!-- <img src="product-image.jpg" alt="Product Image"> -->
+            <p>Product Name: Dark Chocolate Nutella Cake</p>
+            <p>Price:₹ 489</p>
+        </div>
+        <form id="payment-form" action="#" method="post">
+            {% csrf_token %}
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+            <label for="card-holder">Cardholder Name</label>
+            <input type="text" id="card-holder" name="card-holder" placeholder="Mayuresh Chimankar" required>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expiration-date">Expiration Date</label>
+                    <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                </div>
+            </div>
+            <!-- <a href="/payment" class="btn btn-primary">Pay Now</a> -->
+            <button type="submit" class="pay-button">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+{% endblock %}

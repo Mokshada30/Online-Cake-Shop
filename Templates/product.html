@@ -1,0 +1,297 @@
+<!-- product.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Product Page</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.product {
+    display: flex;
+    width: 60%; /* Adjust as needed */
+    border: 0px solid #833517;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 55%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+}
+
+.product-info {
+    width: 50%;
+    padding: 30px;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+.product h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f0706a; /* Change color as needed */
+}
+
+.product-rating {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-rating i {
+    color: #f0706a; /* Change color as needed */
+}
+
+.product p {
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #f0706a; /* Change color as needed */
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #e05752; /* Change color as needed */
+}
+
+    </style>
+</head>
+<body>
+  <center>
+    <div class="product-container">
+      <center><div class="product">
+            <div class="product-image">
+                <img src="/Static/img/product-1.jpg" alt="Berries Citrus Fruits Cake">
+            </div>
+            <div class="product-info">
+                <h1>Berries Citrus Fruits Cake</h1>
+                <div class="product-price">₹ 349</div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>This delicious cake is made with fresh berries and citrus fruits, and is perfect for any occasion. It's light, fluffy, and bursting with flavor.</p>
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <a href="/product1" class="btn btn-primary">Add to Cart</a>
+                </form>
+            </div>
+        </div></center>
+      </div>
+
+
+      <div class="product-container">
+        <center><div class="product">
+          <div class="product-image">
+              <img src="/Static/img/product-2.jpg" alt="fresh mellow sp color cake">
+          </div>
+          <div class="product-info">
+              <h1>Fresh mellow sp color cake</h1>
+              <div class="product-price">₹ 429</div>
+              <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </div>
+              <p>This delicious cake is made with fresh ingredients and has a soft, mellow texture. The cake is colored with natural food coloring to give it a beautiful hue. It's perfect for any occasion and is sure to be a crowd-pleaser</p>
+              <form action="#" method="post">
+                  {% csrf_token %}
+                  <a href="/product2" class="btn btn-primary">Add to Cart</a>
+              </form>
+          </div>
+      </div></center></div>
+
+
+      <div class="product-container">
+        <center><div class="product">
+        <div class="product-image">
+            <img src="/Static/img/product-3.jpg" alt="rose color sparkel cake">
+        </div>
+        <div class="product-info">
+            <h1>Rose color sparkel cake</h1>
+            <div class="product-price">₹ 389</div>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>This delicious cake is made with fresh ingredients and has a soft, mellow texture. The cake is colored with natural food coloring to give it a beautiful rose hue. It's perfect for any occasion and is sure to be a crowd-pleaser. The cake is topped with edible glitter to give it a sparkling effect.</p>
+            <form action="#" method="post">
+                {% csrf_token %}
+                <a href="/product3" class="btn btn-primary">Add to Cart</a>
+            </form>
+        </div>
+    </div></center></div>
+
+    <div class="product-container">
+      <center><div class="product">
+      <div class="product-image">
+          <img src="/Static/img/product-4.jpg" alt="strawberry nutella cake">
+      </div>
+      <div class="product-info">
+          <h1>Strawberry nutella cake</h1>
+          <div class="product-price">₹ 479</div>
+          <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <p>This delicious cake is made with fresh strawberries and Nutella, and is perfect for any occasion. It's light, fluffy, and bursting with flavor. The cake is topped with a layer of Nutella frosting and fresh strawberries, making it a feast for the eyes as well as the taste buds</p>
+          <form action="#" method="post">
+              {% csrf_token %}
+              <a href="/product4" class="btn btn-primary">Add to Cart</a>
+          </form>
+      </div>
+  </div></center></div>
+
+
+  <div class="product-container">
+    <center><div class="product">
+    <div class="product-image">
+        <img src="/Static/img/product-5.jpg" alt="green bread spar cake">
+    </div>
+    <div class="product-info">
+        <h1>Green bread spar cake</h1>
+        <div class="product-price">₹ 349</div>
+        <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <p>This delicious cake is made with fresh strawberries and has a soft, mellow texture. The cake is colored with natural food coloring to give it a beautiful red hue. It's perfect for any occasion and is sure to be a crowd-pleaser. The cake is topped with edible glitter to give it a sparkling effect.</p>
+        <form action="#" method="post">
+            {% csrf_token %}
+            <a href="/product5" class="btn btn-primary">Add to Cart</a>
+        </form>
+    </div>
+</div></center></div>
+
+
+<div class="product-container">
+<center><div class="product">
+  <div class="product-image">
+      <img src="/Static/img/product-6.jpg" alt="red berries chocolate cake">
+  </div>
+  <div class="product-info">
+      <h1>Red berries chocolate cake</h1>
+      <div class="product-price">₹ 349</div>
+      <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+      </div>
+      <p>This delicious cake is made with rich chocolate and fresh red berries. The cake is moist and fluffy, and the combination of chocolate and berries is simply divine. The cake is topped with a layer of chocolate ganache and fresh berries, making it a feast for the eyes as well as the taste buds.</p>
+      <form action="#" method="post">
+          {% csrf_token %}
+          <a href="/product6" class="btn btn-primary">Add to Cart</a>
+      </form>
+  </div>
+</div></center></div>
+
+
+<div class="product-container">
+  <center><div class="product">
+  <div class="product-image">
+      <img src="/Static/img/product-7.jpg" alt="strawberry red spar cake">
+  </div>
+  <div class="product-info">
+      <h1>Strawberry red spar cake</h1>
+      <div class="product-price">₹ 349</div>
+      <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+      </div>
+      <p>This delicious cake is made with fresh strawberries and has a soft, mellow texture. The cake is colored with natural food coloring to give it a beautiful red hue. It's perfect for any occasion and is sure to be a crowd-pleaser. The cake is topped with edible glitter to give it a sparkling effect.</p>
+      <form action="#" method="post">
+          {% csrf_token %}
+          <a href="/product7" class="btn btn-primary">Add to Cart</a>
+      </form>
+  </div>
+</div></center></div>
+
+<div class="product-container">
+  <center><div class="product">
+  <div class="product-image">
+      <img src="/Static/img/product-8.jpg" alt="dark chocolate nutella cake">
+  </div>
+  <div class="product-info">
+      <h1>Dark chocolate nutella cake</h1>
+      <div class="product-price">₹ 489</div>
+      <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+      </div>
+      <p>A chocolate cake is a popular dessert made with chocolate as a primary ingredient. It typically consists of layers of moist and rich chocolate-flavored cake, often sandwiched with chocolate icing or frosting. Chocolate cakes come in various forms, such as classic layer cakes, decadent fudge cakes, or even molten lava cakes. They are beloved for their indulgent, sweet, and cocoa-rich flavor, making them a favorite treat for chocolate lovers and special occasions.</p>
+      <form action="#" method="post">
+          {% csrf_token %}
+          <a href="/product8" class="btn btn-primary">Add to Cart</a>
+      </form>
+  </div></center>
+</div>
+</div></center>
+
+        
+
+  
+</body>
+</html>
+
+ 
+
+
+
+{% endblock %}
+
+
+
